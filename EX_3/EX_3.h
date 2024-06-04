@@ -9,6 +9,10 @@
 #include<qdebug.h>
 #include<qpushbutton.h>
 #include<qqueue.h>
+#include<unordered_map>
+#include <unordered_map>
+#include <list>
+#include <queue>
 class EX_3 : public QWidget
 {
     Q_OBJECT
@@ -22,9 +26,10 @@ public:
     void OPT();
     void table(); 
     void  RandomSequence();
-
+    void Begin();
 private:
     Ui::EX_3Class ui;
-    int Length;
-    std::vector<int> sequence;
+    int Length;std::vector<int> sequence;
+
+    
 };
